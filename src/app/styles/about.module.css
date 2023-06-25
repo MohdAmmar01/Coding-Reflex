@@ -1,0 +1,28 @@
+
+  .content_container {
+    display: flex;
+    width: 80%;
+    min-height: 80vh;
+    flex-direction: column;
+    padding: 50px;
+    margin :0px auto;
+  }
+  
+  .headinga {
+    font-size: 20px;
+    color: #147efb;
+    text-align: center;
+    margin-bottom: 15px;  
+  }
+  .headingp {
+    font-size: 25px;
+    margin-bottom: 30px;
+  
+  
+  }
+  .paragraph {
+    color: #28292b;
+
+    text-align: left;
+    margin: 5px 0px;
+  }

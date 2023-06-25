@@ -1,0 +1,127 @@
+ .navbar {
+    background-color: white;
+    color: black;
+    position: sticky;
+    top: 0;
+    z-index: 20000;
+    padding: 20px;
+    height: 10vh;
+    border-bottom: 1px solid #dbdde2;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .navbarContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbarBrand {
+    font-weight: 900;
+    font-size: 1.2rem;
+  }
+  
+  .navbarBrand a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .menuIcon {
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  
+  .showOnDesktop {
+    display: none;
+  }
+  
+  .showOnMobile {
+    display: block;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    z-index: 8000;
+    animation: slideIn 0.3s ease-in-out;
+    overflow-x: hidden;
+  }
+  .ham_links{
+    font-size: 20px;
+    text-decoration: none;
+    margin: 10px 0px;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .ham_links:hover{
+    color: #1170d8;
+  }
+  .modalContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    background-color: white;
+  }
+  
+  
+  
+  .navbarLink :hover {
+    color: #00000080;
+  }
+  .navbarBrandLink{
+    cursor: pointer;
+    font-weight: bolder;
+  }
+  .navbarLink{
+    margin: 0 10px;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+  .navbarLink:hover{
+    color: #1170d8;
+  }
+  
+  .closeIcon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .showOnDesktop {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .showOnMobile {
+      display: none;
+    }
+  }
+  

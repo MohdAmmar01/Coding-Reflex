@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: mohdammar.vercel.app
+
+# Sitemaps
+Sitemap: mohdammar.vercel.app/sitemap.xml
