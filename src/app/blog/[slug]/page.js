@@ -4,13 +4,13 @@ import { getPostByname, getallblogs } from '../../../../utils/blogsFunctions';
 import "highlight.js/styles/github.css"
 import {  notFound} from 'next/navigation'
 
-export const  revalidate=43200
 import { Sora } from 'next/font/google';
 
 const shadow = Sora({
   weight: '400',
   subsets: ['latin'],
 });
+export const  revalidate=86400
 
 export async function generateMetadata({params}){
   const data=await getPostByname(`${params.slug}.mdx`)

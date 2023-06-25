@@ -1,7 +1,6 @@
 
 .contact_container {
     width: 100%;
-    padding: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,3 +24,14 @@
     margin:0px  5px ;
     color: #2d2e32;
 }
+
+@media (max-width: 500px) {
+    .headingp{
+        font-size: 20px;
+    }
+    .logo{
+        width: 100px;
+        height: 100px;
+    }
+}
+  

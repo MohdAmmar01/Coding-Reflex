@@ -4,7 +4,7 @@ import { getallblogs } from '../../../utils/blogsFunctions'
 import Link from 'next/link'
 import Image from 'next/image'
 
-export const  revalidate=43200
+export const  revalidate=86400
 
 
 
@@ -30,7 +30,7 @@ async function page() {
      {data.map((elem,i) => {
        return (
         <div key={i} className={styles.blog_item}>
-             <Image alt="blog_img" src={elem.frontmatter.image} width={200} height={200} className={styles.blog_img} />
+             <Image    loading="lazy"  alt="blog_img" src={elem.frontmatter.image} width={200} height={200} className={styles.blog_img} />
 
        <div  className={styles.blog} > 
          <div className={styles.date}>

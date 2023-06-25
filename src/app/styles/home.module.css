@@ -3,6 +3,7 @@
    height: auto;
    min-height: 90vh;
    display: flex;
+
    flex-direction: column;
    align-items: center;
 
@@ -12,19 +13,16 @@
     display: flex;
    min-height: 90vh;
     flex-direction: column;
-    background-image: url("../../../public//images/nikita-kachanovsky-OVbeSXRk_9E-unsplash\ \(2\).jpg");
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../../public//images/linus-mimietz-gvptKmonylk-unsplash.jpg");
     object-fit: cover;
    background-size: 100% auto;
    margin: 30px 0px;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 40px;
-    margin:0px auto;
+    margin:40px auto;
   }
-  
- 
-  
- 
   .hed{
     display: flex;
     align-items: center;
@@ -39,7 +37,7 @@
     color: white;
     font-weight: bolder;
     font-size: 40px;
-    margin-bottom: 15px;
+    margin-top: 45px;
     padding-bottom: 3px;
     border-bottom: 1px solid white;
   }
@@ -47,7 +45,7 @@
     background-color: white;
     color: #2d2e32;
 
-    width: 300px;
+    width: 170px;
     border: none;
     margin: 20px 0px;
     padding: 10px 20px;
@@ -56,44 +54,12 @@
     font-weight: bold;
     cursor: pointer;
   }
-  .par{
-    width: 80%;
-    font-weight: bold;
-color: white;
 
+.explore_button:hover {
+  animation: 0.5s ease-in-out change forwards;
   }
-  .explore_button:hover {
-animation: 0.5s ease-in-out change forwards;
-  }
-  @keyframes change {
-    0%{
-      background-color: white;
-      color: #2d2e32;
-    }
-    100%{
-      background-color:transparent;
-      color: white;
-      font-weight: bolder;
-      border: 1px solid white;
-    }
-  }
-  @media (max-width: 1150px) {
 
-  .par{
-text-align: left;
-  }
-  .mainContainer{
-  width: 100%;
-  }
-     
-  }
-  
-  
-  @media (max-width: 400px) {
-.heading{
-  font-size: 25px;
-}
-  }
+
   
   .allblogs{
     width: 80%;
@@ -202,39 +168,66 @@ color: #147efb;
   font-weight: bold;
   cursor: pointer;
 }
+
+
+
+  @keyframes change {
+    0%{
+      background-color: white;
+      color: #2d2e32;
+    }
+    100%{
+      background-color:transparent;
+      color: white;
+      font-weight: bolder;
+      border: 1px solid white;
+    }
+  }
+
+
+
+
+  @media (max-width: 1150px) {
+
+
+  .mainContainer{
+  width: 100%;
+  }
+     
+  }
+
 @media (max-width:960px){
 .container{
   width: 90%;
-  /* background-image: url("../../../public//images/guillaume-issaly-ZCv2Wn5KO6w-unsplash.jpg"); */
-  background-image: url("../../../public//images/andrej-lisakov-g3z-CgUiPtg-unsplash.jpg");
+  background-image: url("../../../public//images/screen-post-rVcxGBT80j8-unsplash.jpg");
   background-position: center;
   justify-content: center;
   align-items: center;
-}
-.par{
-  width: 100%;
 }
 .container:before{
   opacity: 0;
 }
 .heading{
-  font-size: 45px;
+  font-size: 25px;
+  transform: rotate(5deg);
+  margin: 2px;
+}
+.myblogs{
+  text-align: center;
+
+  margin:  20px auto;
 }
 .explore_button{
-  width: 200px;
+  font-size: 15px;
+  width: 150px;
+  transform: rotate(5deg);
   align-self: center;
 }
-.par{
-  width: 90%;
-  text-align: center;
-  word-spacing: 2px;
-  font-weight: normal;
-  font-size: 15px;
+.allblogs{
+  width: 95%;
 }
-}
-@media (max-width:930px){
-  .blog_item{
-  padding: 5px;
+
+.blog_item{
   flex-direction: column;
   align-items: center;
   background-color: #faf5f5;
@@ -244,15 +237,33 @@ color: #147efb;
       border-radius: 0;
   }
   .blog{
-      width: 90%;
-  }
-  }
-
-  @media (max-width:540px){
-.container{
-  background-size: auto  100% ;
+    width: 90%;
+    padding: 10px 0px;
 }
+}
+
+  @media (max-width:600px){
+
+.explore_button{
+  width: 130px;
+  margin: 4px 0px;
+  padding: 4px 0px;
+  margin-bottom: 25px;
+  font-size: 13px;
+}
+.myblogs{
+  font-size: 20px;
+
+
+}
+}
+  @media (max-width:580px){
+
 .more{
   width: 150px;
 }
-  }
+.container{
+  background-size: auto  100% ;
+
+}
+}

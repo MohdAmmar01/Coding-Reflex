@@ -1,7 +1,7 @@
 
   .content_container {
     display: flex;
-    width: 80%;
+    width: 90%;
     min-height: 80vh;
     flex-direction: column;
     padding: 50px;
@@ -17,8 +17,6 @@
   .headingp {
     font-size: 25px;
     margin-bottom: 30px;
-  
-  
   }
   .paragraph {
     color: #28292b;

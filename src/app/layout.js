@@ -3,12 +3,6 @@ import Navbar from './components/Navbar'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
-// import { Roboto } from 'next/font/google';
-
-// const roboto = Roboto({
-//   weight: '400',
-//   subsets: ['latin'],
-// });
 import { Satisfy } from 'next/font/google';
 
 const shadow = Satisfy({
