@@ -1,10 +1,10 @@
 
   .content_container {
     display: flex;
-    width: 90%;
+    width: 95%;
     min-height: 80vh;
     flex-direction: column;
-    padding: 50px;
+    padding: 20px;
     margin :0px auto;
   }
   

@@ -7,7 +7,6 @@ const nextConfig = {
             "images.unsplash.com"
         ]
     },
-    optimizeFonts: false,
 }
 
 module.exports = nextConfig
