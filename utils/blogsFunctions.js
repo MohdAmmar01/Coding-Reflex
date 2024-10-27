@@ -2,7 +2,7 @@ import {compileMDX} from "next-mdx-remote/rsc"
 import rehypeHighlight from "rehype-highlight/lib";
 
 export const getPostByname=async(filename)=>{
-  const response = await fetch(`https://api.github.com/repos/MohdAmmar01/website_mdx_blogs/contents/${filename}`, {
+  const response = await fetch(`https://api.github.com/repos/MohdAmmar01/coding_reflex_blogs/contents/${filename}`, {
     headers: {
        "Accept":'application/vnd.github+json',
       "Authorization": `Bearer ${process.env.NEXT_PUBLIC_GITHUB_TOKEN}`,
@@ -30,7 +30,7 @@ return blogPostObj
 }
 
 export const getallblogs=async()=>{
-  const response = await fetch(`https://api.github.com/repos/MohdAmmar01/website_mdx_blogs/git/trees/main?recursive=1`, {
+  const response = await fetch(`https://api.github.com/repos/MohdAmmar01/coding_reflex_blogs/git/trees/main?recursive=1`, {
     headers: {
        "Accept":'application/vnd.github+json',
       "Authorization": `Bearer ${process.env.NEXT_PUBLIC_GITHUB_TOKEN}`,
